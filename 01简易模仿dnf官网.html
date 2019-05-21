@@ -1,0 +1,2911 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>静态仿dnf官网</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			list-style: none;
+			text-decoration: none;
+			color: white;
+			font-size: 15px;
+			box-sizing: border-box;
+		}
+
+		/*总体布局样式*/
+		.all {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		/*	head的css样式*/
+		.head {
+			width: 1200px;
+			height: 55px;
+			margin: 0 auto;
+		}
+
+		.head div {
+			float: left;
+		}
+
+		.tc_textshouhu {
+			line-height: 55px;
+		}
+
+		.tc_textshouhu a {
+			color: black;
+		}
+
+		.tc_textshouhu a:hover {
+			color: red;
+		}
+
+		.tc_paihang {
+			width: 270px;
+			height: 55px;
+			text-align: center;
+			line-height: 55px;
+		}
+
+		.tc_paihang a {
+			color: black;
+		}
+
+		.tc_paihang a:hover {
+			color: red;
+		}
+
+		/*	导航栏上部分*/
+		.bgpic {
+			height: auto;
+			width: 100%;
+			background: url(../pictures/dnf官网背景图之女圣职.jpg)no-repeat;
+			margin: 0 auto;
+			position: absolute;
+		}
+
+		.nav {
+			width: 1200px;
+			height: 55px;
+			margin: 25px auto 0 auto;
+			/*background: pink;*/
+		}
+
+		.head_ul {
+			width: 1200px;
+			height: 55px;
+			margin: 0 auto;
+			display: block;
+			font-weight: bold;
+			/*background: yellow;*/
+		}
+
+		.head_ul li {
+			width: 100px;
+			height: 50px;
+			float: right;
+			margin-right: 50px;
+			line-height: 50px;
+			/*background: red*/
+			;
+			text-align: center;
+		}
+
+		.shouye {
+			margin: 0 50px 0 50px;
+		}
+
+		/*	导航栏下部分*/
+		.nav_sun {
+			width: 1200px;
+			height: 100px;
+			margin: 0 auto;
+			/* background: pink;*/
+		}
+
+		.nav_sun ul {
+			float: right;
+			width: 100px;
+			height: auto;
+			margin-right: 50px;
+			/*background: blue;*/
+			text-align: center;
+		}
+
+		.nav_sun a {
+			font-size: 12px;
+		}
+
+		.nav_sun a:hover {
+			color: red;
+		}
+
+		/*宣传图*/
+		.banner {
+			background: black;
+			margin-top: 200px;
+			width: 1200px;
+			height: 337px;
+			margin-left: 200px;
+			box-sizing: border-box;
+		}
+
+		.downloadgame {
+			width: 25%;
+			height: 100%;
+			background: violet;
+			float: left;
+		}
+
+		.download {
+			width: 100%;
+			height: 55%;
+			background: #282725;
+			text-align: center;
+			padding-top: 20px;
+			border: 1px solid #8c8c8c;
+
+		}
+
+		.download img {
+			width: 50%;
+			height: 50%;
+		}
+
+		.download_text {
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.cross {
+			width: 100%;
+			height: 15%;
+			background: green;
+		}
+
+		.left_zc {
+			width: 50%;
+			height: 100%;
+			background: #282725;
+			float: left;
+			text-align: center;
+			line-height: 50.55px;
+			border: 1px solid #8c8c8c;
+		}
+
+		.left_zc a {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.right_cz {
+			width: 50%;
+			height: 100%;
+			background: #282725;
+			float: left;
+			text-align: center;
+			line-height: 50.55px;
+			border: 1px solid #8c8c8c;
+		}
+
+		.right_cz a {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.newplayer1 {
+			width: 100%;
+			height: 30%;
+			background: #282725;
+			line-height: 101.1px;
+			text-align: center;
+			border: 1px solid #8c8c8c;
+		}
+
+		.newplayer1 a {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.gif_pic {
+			width: 40%;
+			height: inherit;
+			background: maroon;
+			float: left;
+		}
+
+		.gif_pic img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.newstable {
+			width: 35%;
+			height: 100%;
+			float: left;
+			background: #282725;
+		}
+
+		.ul1 {
+			width: 100%;
+			height: 20%;
+		}
+
+		.ul1 ul {
+			width: 100%;
+			height: 100%;
+		}
+
+		.ul1 ul li {
+			width: 20%;
+			height: 100%;
+			text-align: center;
+			line-height: 67.4px;
+			float: left;
+		}
+
+		.ul1 ul li a {
+			color: #c4b79b;
+			font-weight: bold;
+		}
+
+		.ul1_tit {
+			width: 90%;
+			height: 10%;
+			background: black;
+			text-align: center;
+			line-height: 33.7px;
+			margin: 0 auto;
+		}
+
+		.ul1_tit a {
+			color: #ec4828;
+			font-weight: bold;
+		}
+
+		.ul2 {
+			width: 100%;
+			height: 70%;
+			margin-top: 10px;
+		}
+
+		.ul2 ul {
+			width: 90%;
+			height: 100%;
+			margin: 0 auto;
+		}
+
+		.ul2 li {
+			width: 100%;
+			height: 16%;
+		}
+
+		.ul2 a {
+			font-size: 13px;
+			color: #b8afa2;
+		}
+
+		.ul2 a:hover {
+			color: #ec4828;
+		}
+
+		.ul2 span {
+			float: right;
+			font-size: 13px;
+			color: #616161;
+		}
+
+		/*主要部分*/
+		.main_all {
+			width: 1200px;
+			height: auto;
+			background: green;
+			margin-left: 200px;
+			position: relative;
+			top: 717px;
+			box-sizing: border-box;
+		}
+
+		.left_all {
+			float: left;
+			/* background: mediumblue; */
+			/*左半部菜单栏总盒子*/
+			width: 25%;
+			height: auto;
+
+		}
+
+		/*快速入口样式*/
+		.quick_into {
+			width: 100%;
+			height: 250px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			border: 1px solid gray;
+		}
+
+		.title_into {
+			text-align: center;
+			font-size: 20px;
+			color: #333;
+			border-bottom: 1px solid #e8e8e8;
+			width: 80%;
+			height: 20%;
+			margin: 0 auto;
+			line-height: 50px;
+		}
+
+		.quick_into ul {
+			width: 100%;
+			height: 100%;
+			list-style: none;
+			padding: 10px 15px;
+			display: block;
+			color: black;
+
+		}
+
+		.quick_into li {
+			width: 33%;
+			height: 40%;
+			float: left;
+			background: white;
+			text-align: center;
+			/* border: 1px solid red; */
+		}
+
+		.quick_into li a {
+			color: black;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+		}
+
+		.top_pic {
+			width: 50%;
+			height: 50%;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+
+		.top_pic img {
+			width: 100%;
+			height: 100%;
+		}
+
+		/*玩家社区样式*/
+		.player_unity {
+			width: 100%;
+			height: 250px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			border: 1px solid gray;
+		}
+
+		.community{
+			text-align: center;
+			font-size: 20px;
+			color: #333;
+			width: 80%;
+			height: 20%;
+			margin: 0 auto;
+			line-height: 50px;
+			border-bottom: 1px solid #e8e8e8;
+		}
+
+		.comm_table {
+			width: 100%;
+			height: 100%;
+			list-style: none;
+			padding: 10px 15px;
+			display: block;
+			color: black;
+		}
+
+		.comm_table li {
+			width: 33%;
+			height: 40%;
+			float: left;
+			background: white;
+			text-align: center;
+			/* border: 1px solid red; */
+		}
+
+		.comm_table li a {
+			color: black;
+		}
+
+		/*滑动菜单样式*/
+		.menu_title {
+			width: 100%;
+			height: 250px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			border: 1px solid gray;
+		}
+
+		.menu_title_ul {
+			width: 100%;
+			height: 100%;
+			list-style: none;
+			background: green;
+		}
+
+		.newplayer_li,
+		.news_li,
+		.video,
+		.server_li {
+			width: 100%;
+			height: 25%;
+			line-height: 100%;
+			margin: 0 auto;
+			background: #383635;
+			border-left: 4px solid transparent;
+			position: relative;
+		}
+
+		/*滑动菜单所有列表项a标签样式*/
+		.newplayer_guide,
+		.strategy_video,
+		.infor_data,
+		.own_server {
+			width: 80%;
+			height: 100%;
+			border-bottom: 1px solid #4a4847;
+			display: block;
+			margin: 0 auto;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 10%;
+			position: relative;
+		}
+
+		/* 滑动菜单左部分红条样式 */
+		.newplayer_li:hover,
+		.news_li:hover,
+		.video:hover,
+		.server_li:hover {
+			border-left: 4px solid #ec4828;
+
+		}
+
+		.newplayer_li:hover .menu_one {
+			display: block;
+
+		}
+
+		/* 滑动菜单字体颜色 */
+		.newplayer_guide:hover,
+		.infor_data:hover,
+		.strategy_video:hover,
+		.own_server:hover {
+			color: #ec4828;
+			display: block;
+		}
+
+		.menu_line_right {
+			list-style: none;
+		}
+
+		.menu_one {
+			width: 900px;
+			height: 250px;
+			display: none;
+			background: white;
+			position: absolute;
+			left: 295px;
+			top: 0;
+			z-index: 999;
+			/* border: 1px solid #333; */
+
+		}
+
+		/* 第一个隐藏菜单 */
+		.menu_one ul {
+			width: 100%;
+			height: 100%;
+			background: white;
+			display: block;
+			margin-left: 0;
+		}
+
+		.menu_one ul li {
+			width: 112.5px;
+			height: 50%;
+			float: left;
+			background: white;
+			text-align: center;
+			/* border: 1px solid red; */
+			display: block;
+		}
+
+		.menu_one li a {
+			width: 80%;
+			height: 100%;
+			border-bottom: 0px;
+			display: block;
+			margin: 0 auto;
+			font-size: 14px;
+			font-weight: normal;
+			padding: 10%;
+			color: #4a4847;
+		}
+
+		.menu_one li:hover {
+			border: 0;
+		}
+
+		/* a.newplayer_guide:hover~div.menu_one {
+			display: block;
+		} */
+		/* 第二个隐藏菜单 */
+		.menu_two {
+			width: 900px;
+			height: 250px;
+			background: white;
+			position: absolute;
+			left: 295px;
+			top: -62.5px;
+			display: none;
+			z-index: 2;
+			/* border: 1px solid #333; */
+		}
+
+		.menu_two ul {
+			width: 50%;
+			height: 250px;
+			display: block;
+			margin-left: 0;
+			float: left;
+		}
+
+		.menu_two ul li {
+			width: 112.5px;
+			height: 50%;
+			float: left;
+			background: white;
+			text-align: center;
+			/* border: 1px solid red; */
+			display: block;
+		}
+
+		.menu_two ul li a {
+			color: #333;
+		}
+
+		.knowledge {
+			width: 50%;
+			height: 100%;
+			float: left;
+			background: white;
+			padding-left: 10px;
+			font-family: "微软雅黑";
+
+		}
+
+		.knowledge h3 {
+			font-size: 20px;
+			margin: 20px 0 10px 10px;
+			color: #333;
+		}
+
+		.knowledge p {
+			margin-left: 10px;
+		}
+
+		.knowledge p a {
+			width: auto;
+			height: auto;
+			font-size: 15px;
+			font-weight: normal;
+			color: #4a4847;
+		}
+
+		.menu_two li:hover {
+			border: 0;
+		}
+
+		.knowledge p a:hover {
+			color: #ec4828;
+			display: inline;
+		}
+
+		.news_li:hover .menu_two {
+			display: block;
+		}
+
+		/* .infor_data:hover~.menu_two{
+			display: block;
+		} */
+		/* 第三个隐藏菜单 */
+		.menu_three {
+			width: 900px;
+			height: 250px;
+			background: white;
+			position: absolute;
+			left: 295px;
+			top: -125px;
+			border: 1px solid #4a4847;
+			display: none;
+			padding: 10px;
+			padding-left: 30px;
+			z-index: 4;
+		}
+
+		.three_hide_left {
+			width: 70%;
+			height: 100%;
+			border-right: 1px solid #444444;
+			padding: 10px;
+			float: left;
+			color: #333;
+		}
+
+		.three_hide_left h1 {
+			font-size: 20px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+
+		.three_hide_left a {
+			margin-bottom: 5px;
+			color: #333;
+		}
+
+		.three_hide_left a:hover {
+			color: #ec4828;
+			display: inline;
+		}
+
+		.three_hide_right {
+			float: left;
+			width: 30%;
+
+			height: 100%;
+
+		}
+
+		.three_video {
+
+			width: 50%;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 80px;
+
+
+		}
+
+		.three_video a {
+			color: #333;
+		}
+
+		/* .three_video a::after{
+			background: url(../pictures/svg/播放.svg);
+			background-size: 4px 5px;
+
+			未处理：文字前的播放图片
+		} */
+		.three_video a:hover {
+			color: #ec4828;
+			display: inline;
+
+		}
+
+		.video:hover .menu_three {
+			display: block;
+
+		}
+
+		/* 第四个隐藏菜单 */
+		.menu_four {
+			width: 900px;
+			height: 250px;
+			display: none;
+			position: absolute;
+			left: 295px;
+			top: -187.5px;
+			border: 1px solid #4a4847;
+			background: white;
+			z-index: 5;
+		}
+
+		.menu_four_left {
+			float: left;
+			width: 50%;
+			height: 100%;
+			padding: 15px;
+		}
+
+		.menu_four_left ul {
+			height: 100%;
+		}
+
+		.menu_four_li {
+			width: 25%;
+			height: 50%;
+			display: block;
+			background: white;
+			float: left;
+			/* border: 1px solid red; */
+			text-align: center;
+		}
+
+		.menu_four_li a {
+			color: #333;
+			text-align: center;
+		}
+
+		.menu_four_right {
+			float: left;
+			width: 50%;
+			height: 100%;
+			padding: 15px;
+		}
+
+		.f_title {
+			font-size: 20px;
+			color: #333;
+		}
+
+		.f_text {
+			margin: 10px 0;
+
+		}
+
+		.menu_four a:hover {
+			color: #ec4828;
+		}
+
+		.f_text a {
+			color: #333;
+		}
+
+		.server_li:hover .menu_four {
+			display: block;
+		}
+
+		/* 道聚城推荐栏的样式 */
+		.toys {
+			width: 100%;
+			height: 350px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			border: 1px solid gray;
+			padding: 10x;
+			background: white;
+		}
+
+		.toys_title {
+			text-align: center;
+			font-size: 20px;
+			border-bottom: 1px solid #4a4847;
+			width: 80%;
+			margin: 0 auto;
+			color: #333;
+		}
+
+		.toys_ul {
+
+			height: 100%;
+		}
+
+		.toys_li {
+			width: 80%;
+			padding: 20px 20px;
+			margin: 0 auto;
+			height: 30%;
+			padding-top: 30px;
+		}
+
+		.photo_toys {
+			float: left;
+			margin-left: 16px;
+		}
+
+		.hammer img {
+			width: 58px;
+			height: 58px;
+		}
+
+		.toys_right {
+			float: left;
+			font-size: 14px;
+			color: #333;
+			margin-left: 10px;
+		}
+
+		.buynow {
+			font-size: 14px;
+			background: black;
+		}
+
+		/* 合作伙伴 */
+		.partner {
+			width: 100%;
+			height: 200px;
+			background: #f3f1ed;
+			padding-top: 30px;
+		}
+
+		.select_menu {
+			margin: 0 auto;
+			border: 3px solid #4a4847;
+			width: 80%;
+			height: 40px;
+			position: relative;
+
+		}
+
+		.select_h {
+			font-size: 100%;
+			color: #4a4847;
+			padding: 5px;
+		}
+
+		.select_hide {
+			width: 240px;
+			margin-left: 30px;
+			border: 1px solid #d0d0d0;
+			overflow-y: scroll;
+			height: 200px;
+			display: none;
+			position: absolute;
+			top: 37px;
+			left: -33px;
+			background: white;
+		}
+
+		.select_hide li a {
+			color: #4a4847;
+		}
+
+		.select_hide li a:hover {
+			color: #ec4828;
+		}
+
+		.select_menu:hover .select_hide {
+			display: block;
+		}
+
+		.partners {
+			text-align: center;
+			font-size: 100%;
+			color: #4a4847;
+			margin-top: 10px;
+		}
+
+		.part_name {
+			margin: 0 auto;
+			width: 40%;
+			height: auto;
+			margin-top: 10px;
+		}
+
+		.part_name p {
+			color: #4a4847;
+			font-weight: bolder;
+			font-size: 30px;
+			text-align: center;
+		}
+
+		#part_name_smile {
+			font-size: 15px;
+			color: #4a4847;
+		}
+
+		.part_name a:hover #part_name_smile,
+		.part_name a:hover p {
+			color: #ec4828;
+		}
+
+		/* 右半部分总体样式 */
+		.right_all {
+			float: right;
+			background: white;
+			width: 75%;
+			height: auto;
+			padding: 20px 0 0 20px;
+
+		}
+
+		/* 每块标题部分样式 */
+		.activty_center_ul_title {
+			width: 100%;
+			height: 60px;
+			background: white;
+			padding: 5px;
+			border-bottom: 1px solid gray;
+		}
+
+		/* 活动中心 */
+		.activty_center_ul_title h3 {
+			font-size: 20px;
+			line-height: 50px;
+			margin-left: 5px;
+			border-right: 1px solid #4a4847;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: #333;
+		}
+
+		.activity_title_right {
+			font-size: 10px;
+			float: left;
+			padding: 10px;
+			margin-left: 10px;
+			color: #333;
+		}
+
+		.activity_more {
+
+			float: right;
+			width: 20%;
+			height: 90%;
+			padding: 25px 0 0 80px;
+
+		}
+
+		.activity_more a {
+			font-size: 10px;
+			color: #333;
+		}
+
+		.activity_more a:hover {
+			color: #ec4828;
+		}
+
+		#activty_tab li {
+			float: left;
+			width: 20%;
+			height: 40px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 40px;
+			cursor: pointer;
+			color: #333;
+			font-weight: bold;
+		}
+
+		.activty_center_li {
+			position: relative;
+		}
+
+		#activty_center_tab {
+			width: 100%;
+			height: 180px;
+			margin-top: 10px;
+		}
+
+		.activity_hide_one {
+			padding: 50px 0 0 20px;
+			/* display: none; */
+		}
+
+		.hide_lastthree {
+			margin-left: 10px;
+		}
+
+		.activity_hide {
+			display: none;
+			padding: 50px 0 0 20px;
+		}
+
+		/* 视频中心 */
+		.video_center {
+			width: 100%;
+			height: 250px;
+
+		}
+
+		.video_left {
+			width: 50%;
+			height: 180px;
+			background: white;
+			float: left;
+		}
+
+		.video_left_ul li {
+			float: left;
+			width: 20%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 18px;
+			height: 40px;
+			background: white;
+			line-height: 40px;
+			/* border: 1px solid red; */
+			color: #333;
+		}
+
+		.video_pic,
+		.video_pic_left,
+		.video_pic_right {
+			float: left;
+			text-align: center;
+		}
+
+		.video_pic_left a {
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+		}
+
+		.video_pic_left {
+			width: 49%;
+			height: 90%;
+		}
+
+		.video_pic_left a img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.video_pic {
+			width: 100%;
+			height: 100%;
+
+		}
+
+		.video_pic_right {
+			width: 45%;
+			height: 68%;
+			margin-left: 2%;
+
+		}
+
+		.video_pic_right a {
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+		}
+
+		.video_pic_right div {
+			width: 100%;
+			height: 100%;
+		}
+
+		.video_pic_right a img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.video_right {
+			background: white;
+			width: 50%;
+			height: 180px;
+			float: left;
+		}
+
+		/* 主播部分 */
+		.host li {
+			/* float: left; */
+			padding-left: 20px;
+
+			font-weight: bold;
+			color: #333;
+			font-size: 18px;
+			height: 40px;
+			background: white;
+			line-height: 40px;
+		}
+
+		.host ul {
+			background: #333;
+		}
+
+		.video_host_left img {
+			width: 200px;
+			float: left;
+		}
+
+		.video_host_right img {
+			width: 200px;
+			float: left;
+		}
+
+		.video_host_right {
+			margin-left: 10px;
+		}
+
+		/* 品牌中心 */
+		.brand_center {
+			width: 100%;
+			height: 385px;
+			background: white;
+		}
+
+		.brand_center_title {
+			width: 100%;
+			height: 60px;
+			background: white;
+			padding: 5px;
+			margin-bottom: 10px;
+			border-bottom: 1px solid #333;
+
+		}
+
+		.brand_center_title h3 {
+			font-size: 20px;
+			line-height: 50px;
+			margin-left: 5px;
+			border-right: 1px solid #4a4847;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: #333;
+		}
+
+		.brand_center_title_Eng {
+			font-size: 10px;
+			float: left;
+			padding: 10px;
+			margin-left: 10px;
+			color: #333;
+		}
+
+		.brand_pic {
+			width: 100%;
+			height: 315px;
+		}
+
+		.brand_picture {
+			height: 110px;
+			width: 100%;
+		}
+
+		.brand_pic img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.brand_pic_left {
+			float: left;
+			background: #333;
+			width: 49%;
+			height: 100%;
+		}
+
+		.brand_pic_right {
+			float: right;
+			width: 49%;
+			height: 100%;
+			background: darkgrey;
+		}
+
+		.novel {
+			width: 100%;
+			height: 40px;
+			background: white;
+			text-align: initial;
+			border-bottom: 1px solid #e8e8e8;
+		}
+
+		.novel h3 {
+			display: inline;
+			line-height: 40px;
+			margin-left: 35px;
+			color: #333;
+		}
+
+		.novel p {
+			float: right;
+			line-height: 40px;
+			color: #333;
+		}
+
+		.novel p a {
+			color: #333;
+		}
+
+		.novel p a:hover {
+			color: #ec4828;
+		}
+
+		.novel_title {
+			width: 100%;
+			height: 45px;
+			background: white;
+		}
+
+		.novel_title_ul {
+			width: 100%;
+			height: 100%;
+		}
+
+		.novel_title_ul li {
+			color: #333;
+		}
+
+		.novel_one,
+		.novel_two,
+		.novel_three {
+			width: 33%;
+			height: 100%;
+			float: left;
+			position: relative;
+			text-align: center;
+			line-height: 45px;
+			font-weight: bold;
+		}
+
+		/* .novel_title ul li:hover {
+			color: #ec4828;
+		} */
+
+		.novel_one_text {
+			width: 100%;
+			height: 120px;
+			background: white;
+
+
+		}
+
+		.novel_pic img {
+			width: 120px;
+			height: 100px;
+		}
+
+		.novel_pic {
+			float: left;
+			width: 35%;
+			height: 100%;
+			background: white;
+			text-align: center;
+		}
+
+		.novel_chapter {
+			float: left;
+			width: 49%;
+			height: 100%;
+			background: white;
+		}
+
+		.novel_chapter a {
+			color: #333;
+			font-size: 13px;
+		}
+
+		.novel_chapter a:hover {
+			color: #ec4828;
+		}
+
+		.novel_chapter li {
+			margin-bottom: 2px;
+		}
+
+		.anime_title {
+			width: 100%;
+			height: 40px;
+			background: white;
+			text-align: initial;
+			border-bottom: 1px solid #e8e8e8;
+		}
+
+		.anime_title h3 {
+			display: inline;
+			line-height: 40px;
+			margin-left: 35px;
+			color: #333;
+		}
+
+		.anime_title p {
+			float: right;
+			line-height: 40px;
+		}
+
+		.anime_title p a {
+			color: #333;
+		}
+
+		.anime_title p a:hover {
+			color: #ec4828;
+		}
+
+		.anime_pic {
+			width: 100%;
+			height: 165px;
+			background: white;
+			padding: 10px;
+		}
+
+		/* 媒体资讯 */
+		.media_information {
+			width: 100%;
+			height: 281px;
+			background: white;
+		}
+
+		.media_title {
+			width: 100%;
+			height: 60px;
+			background: white;
+			padding: 5px;
+			border-bottom: 1px solid #333;
+		}
+
+		.media_title h3 {
+			font-size: 20px;
+			line-height: 50px;
+			margin-left: 5px;
+			border-right: 1px solid #4a4847;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: #333;
+		}
+
+		.media_title_Eng {
+			font-size: 10px;
+			float: left;
+			padding: 10px;
+			margin-left: 10px;
+			color: #333;
+		}
+
+		.media_more {
+			background: white;
+			float: right;
+			width: 20%;
+			height: 90%;
+			padding: 25px 0 0 80px;
+
+		}
+
+		.media_more a {
+			font-size: 10px;
+			color: #333;
+		}
+
+		.meidia_more a:hover {
+			color: #ec4828;
+
+		}
+
+		.media_news {
+			width: 49%;
+			height: 200px;
+			background: white;
+			line-height: 30px;
+			float: left;
+
+		}
+
+		.media_news ul {
+			margin-left: 20px;
+			margin-top: 5px;
+		}
+
+		.media_news a:hover {
+			color: #ec4828;
+		}
+
+		.media_news a {
+			font-size: 14px;
+			color: #333;
+		}
+
+		.media_pic {
+			width: 49%;
+			height: 200px;
+			float: right;
+			margin-top: 10px;
+
+		}
+
+		/* 职业功略 */
+		.professional {
+			width: 100%;
+			height: 311px;
+			background: white;
+			margin-bottom: 10px;
+
+		}
+
+		.professional_title {
+			width: 100%;
+			height: 60px;
+			background: white;
+			padding: 5px;
+			border-bottom: 1px solid #333;
+			margin-bottom: 10px;
+		}
+
+		.professional_title h3 {
+			font-size: 20px;
+			line-height: 50px;
+			margin-left: 5px;
+			border-right: 1px solid #4a4847;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: #333;
+		}
+
+		.professional_Eng {
+			font-size: 10px;
+			float: left;
+			padding: 10px;
+			margin-left: 10px;
+			color: #333;
+		}
+
+		.professional_more {
+			background: white;
+			float: right;
+			width: 35%;
+			height: 90%;
+			line-height: 48px;
+		}
+
+		.professional_more a {
+			color: #333;
+		}
+
+		.professional_more a:hover {
+			color: #ec4828;
+		}
+
+		.professional_table {
+			width: 100%;
+			height: 240px;
+			background: white;
+		}
+
+		.pro_table1 {
+			width: 4%;
+			height: 100%;
+			background: darkorange;
+			float: left;
+		}
+
+		.pro_table1 li {
+			font-size: 15px;
+			text-align: center;
+			padding: 5px;
+		}
+
+		.pro_table2 {
+			width: 36%;
+			height: 100%;
+			background: crimson;
+			float: left;
+		}
+
+		.pro_table2_top {
+			width: 100%;
+			height: 75%;
+			background: white;
+			line-height: 28px;
+		}
+
+		.pro_table2_top ul li a {
+			color: #333;
+			font-size: 14px;
+		}
+
+		.pro_table2_top ul li a:hover {
+			color: #ec4828;
+		}
+
+		.pro_table2_bottom {
+			width: 100%;
+			height: 25%;
+			background: white;
+		}
+
+		.pro_table2_bottom ul {
+			width: 90%;
+			height: 100%;
+			border-top: 1px solid #333;
+			margin: 0 auto;
+		}
+
+		.pro_table2_bottom ul li {
+			float: left;
+			width: 25%;
+			height: 100%;
+		}
+
+		.pro_table2_bottom li a {
+			font-size: 14px;
+			color: #333;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.pro_top_pic {
+			width: 50%;
+			height: 70%;
+			margin-left: 10px;
+		}
+
+		.pro_top_pic img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.pro_table3 {
+			width: 60%;
+			height: 100%;
+			background: white;
+			float: left;
+		}
+
+		.pro_table3 ul {
+			width: 100%;
+			height: 100%;
+		}
+
+		.pro_table3 ul li {
+			float: left;
+			width: 5%;
+			height: 100%;
+			text-align: center;
+			border: 1px solid #e8e8e8;
+		}
+
+		.pro_table3 a {
+			color: #333;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		/* 赛事专区 */
+		.race_area {
+			width: 100%;
+			height: 500px;
+			background: white;
+		}
+
+		.race_title {
+			width: 100%;
+			height: 61px;
+			background: white;
+			padding: 5px;
+			border-bottom: 1px solid #333;
+		}
+
+		.race_title h3 {
+			font-size: 20px;
+			line-height: 50px;
+			margin-left: 5px;
+			border-right: 1px solid #4a4847;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: #333;
+		}
+
+		.race_Eng {
+			font-size: 10px;
+			float: left;
+			padding: 10px;
+			margin-left: 10px;
+			color: #333;
+		}
+
+		.race_more {
+			background: white;
+			float: right;
+			width: 10%;
+			height: 90%;
+			line-height: 48px;
+			text-align: center;
+		}
+
+		.race_more a {
+			font-size: 12px;
+			color: #333;
+		}
+
+		.race_content {
+			width: 100%;
+			height: 440px;
+		}
+
+		.rc_left {
+			width: 70%;
+			height: 100%;
+			float: left;
+		}
+
+		.rc_title {
+			width: 100%;
+			height: 40px;
+			background: white;
+		}
+
+		.rc_title ul {
+			width: 100%;
+			height: 100%;
+		}
+
+		.rc_title ul li {
+			width: 25%;
+			height: 100%;
+			text-align: center;
+			line-height: 40px;
+			float: left;
+		}
+
+		.rc_title ul li a {
+			color: #333;
+			font-weight: bold;
+		}
+
+		.F1 {
+			width: 100%;
+			height: 180px;
+			background: white;
+		}
+
+		.rc_pic {
+			width: 30%;
+			height: 180px;
+			background: white;
+			float: left;
+			text-align: center;
+		}
+
+		.rc_pic p {
+			display: inline-block;
+			width: 50%;
+			height: 20px;
+			background: black;
+		}
+
+		.rc_left_ul {
+			float: left;
+			width: 70%;
+			height: 180px;
+		}
+
+		.rc_left_ul ul {
+			width: 100%;
+			height: 90%;
+			margin: 5px 0;
+		}
+
+		.rc_left_ul ul li {
+			line-height: 25px;
+		}
+
+		.rc_left_ul ul li a {
+			color: #333;
+		}
+
+		.rc_left_ul ul li a:hover {
+			color: #ec4828;
+		}
+
+		.live_trailer {
+			width: 100%;
+			height: 220px;
+			background: white;
+		}
+
+		.live_title {
+			width: 100%;
+			height: 40px;
+			background: white;
+		}
+
+		.live_title h3 {
+			font-size: 15px;
+			line-height: 40px;
+			margin-left: 5px;
+			width: 130px;
+			text-align: center;
+			float: left;
+			color: #333;
+		}
+
+		.live_more {
+			float: right;
+		}
+
+		.live_trailer table {
+			margin-left: 20px;
+		}
+
+		.live_trailer table td {
+			color: #333;
+		}
+
+		.watch {
+			width: 60px;
+			height: 20px;
+			background: orangered;
+			display: inline-block;
+			text-align: center;
+		}
+
+		.rc_right {
+			padding: 40px 0;
+			text-align: center;
+		}
+
+		.rc_right img {
+			margin-bottom: 25px;
+		}
+
+		/* 底部样式 */
+		.footer {
+			height: 200px;
+			width: 100%;
+			background: #282725;
+			position: absolute;
+			top: 2900px;
+		}
+
+		.foot_text {
+			margin: 0 auto;
+			width: 75%;
+			height: 100%;
+		}
+
+		.foot_left {
+			width: 25%;
+			height: 80%;
+			float: left;
+			margin-top: 20px;
+			border-right: 1px solid #8c8c8c;
+		}
+
+		.tencent {
+			float: left;
+			width: 100%;
+			height: 50%;
+
+		}
+
+		.eng {
+			width: 100%;
+			height: 100%;
+			float: left;
+			font-style: italic;
+			line-height: 100px;
+		}
+
+		.eng a {
+			font-size: 25px;
+			font-weight: bold;
+			font-style: italic;
+		}
+
+		.foot_right {
+			float: left;
+			width: 75%;
+			height: 100%;
+		}
+
+		.foot_right_all {
+			width: 100%;
+			height: 100%;
+			margin-left: 60px;
+		}
+
+		.foot_right_all li {
+			width: 100%;
+			height: 12.5%;
+			color: #8c8c8c;
+		}
+
+		.foot_right_all li a,
+		.foot_right_all li span {
+			color: #8c8c8c;
+			font-size: 13px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!--总体布局盒子-->
+	<div class="all">
+		<!--头部盒子-->
+		<div class="head">
+			<div class="tc_pic">
+				<a href="#"><img src="../pictures/腾讯游戏图.jpg" alt="#"></a>
+			</div>
+			<div class="tc_ad">
+				<a href="#"><img src="../pictures/dnf官网head广告01.png" alt="#">
+				</a>
+			</div>
+			<div class="tc_textshouhu">
+				<a href="#">成长守护平台</a>
+			</div>
+			<div class="tc_paihang">
+				<a href="#">腾讯游戏排行榜</a>
+			</div>
+		</div>
+		<!--背景图-->
+		<div class="bgpic">
+			<div class="nav">
+				<ul class="head_ul">
+					<li><a href="#">玩家社区</a></li>
+					<li><a href="#">游戏安全</a></li>
+					<li><a href="#">用户服务</a></li>
+					<li><a href="#">赛事</a></li>
+					<li><a href="#">活动</a></li>
+					<li><a href="#">游戏资料</a></li>
+					<li class="head_li"><a href="#">网站首页</a></li>
+				</ul>
+			</div>
+			<div class="nav_sun">
+
+				<ul class="community1">
+					<li><a href="#">DNF助手</a></li>
+					<li><a href="#">论坛</a></li>
+					<li><a href="#">微信</a></li>
+					<li><a href="#">微博</a></li>
+					<li><a href="#">问答</a></li>
+				</ul>
+				<ul class="safe">
+					<li><a href="#">安全任务</a></li>
+					<li><a href="#">处罚申诉</a></li>
+					<li><a href="#">视频举报</a></li>
+					<li><a href="#">被盗找回</a></li>
+					<li><a href="#">信用星级</a></li>
+				</ul>
+				<ul class="server">
+					<li><a href="#">充值</a></li>
+					<li><a href="#">兑换CDKEY</a></li>
+					<li><a href="#">角色恢复</a></li>
+					<li><a href="#">圣耀服务</a></li>
+				</ul>
+
+				<ul class="game">
+					<li><a href="#">F1天王赛</a></li>
+					<li><a href="#">职业联赛</a></li>
+					<li><a href="#">职业第一人</a></li>
+				</ul>
+				<ul class="activity">
+					<li><a href="#">官方活动</a></li>
+					<li><a href="#">合作活动</a></li>
+					<li><a href="#">媒体活动</a></li>
+				</ul>
+
+				<ul class="ziliao">
+					<li><a href="#">新闻公告</a></li>
+					<li><a href="#">版本专题</a></li>
+					<li><a href="#">职业攻略</a></li>
+					<li><a href="#">壁纸时装</a></li>
+					<li><a href="#">视频中心</a></li>
+				</ul>
+				<ul class="shouye">
+					<li><a href="#">世界观</a></li>
+					<li><a href="#">周边商城</a></li>
+					<li><a href="#">道聚城</a></li>
+				</ul>
+			</div>
+
+			<div class="banner">
+
+				<div class="downloadgame">
+					<div class="download">
+						<a href="#"><img src="../pictures/svg/下载图标白.svg">
+							<div class="download_text">
+								下载游戏
+							</div>
+						</a>
+					</div>
+
+					<div class="cross">
+						<div class="left_zc">
+							<a href="#">注册</a>
+						</div>
+						<div class="right_cz">
+							<a href="#">登陆</a>
+						</div>
+					</div>
+					<div class="newplayer1">
+						<a href="#">
+							新手豪华礼包</a>
+					</div>
+				</div>
+				<div class="gif_pic">
+					<img src="../pictures/dnf/顶端宣传图.jpg">
+				</div>
+				<div class="newstable">
+					<div class="ul1">
+						<ul>
+							<li><a href="#">综合</a></li>
+							<li><a href="#">公告</a></li>
+							<li><a href="#">活动</a></li>
+							<li><a href="#">赛事</a></li>
+							<li><a href="#">社区</a></li>
+						</ul>
+					</div>
+					<div class="ul1_tit">
+						<p><a href="#">[DPL] 全面升级，DNF DPL全国挑战赛正式开启</a></p>
+					</div>
+					<div class="ul2">
+						<ul>
+							<li>
+								<a href="#">[新闻] 福利开运袋袋惊喜，签到领福利</a>
+								<span>4/18</span>
+							</li>
+							<li>
+								<a href="#">[公告] 4月18日 早4点30分停机更新公告</a>
+								<span>4/18</span>
+							</li>
+							<li>
+								<a href="#">[公告] “特别快递有惊喜”欢乐代币券奖励延期发放公告</a>
+								<span>4/17</span>
+							</li>
+							<li>
+								<a href="#">[活动] 守护树精灵之森，树精灵萌宠带回家</a>
+								<span>4/15</span>
+							</li>
+							<li>
+								<a href="#">[DPL] 赛事奖励领取系统更新公告</a>
+								<span>4/10</span>
+							</li>
+							<li>
+								<a href="#">[论坛] 写手团人品帝期刊 【第七十五期】</a>
+								<span>4/06</span>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- 背景图下面整体内容 -->
+		<div class="main_all">
+			<!-- 左边整体 -->
+			<div class="left_all">
+				<!-- 快速入口 -->
+				<div class="quick_into">
+					<h1 class="title_into">快速入口</h1>
+					<ul class="into_table">
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/钥匙.svg">
+								</div>
+								兑换CDKEY
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/钻石.svg">
+								</div>
+								黑钻专区
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/服务评价-客服.svg">
+								</div>
+								客服留言
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/设 置.svg">
+								</div>
+								安全中心
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/衣服.svg">
+								</div>
+								周边商城
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/耳机 客服.svg">
+								</div>
+								联系客服
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="player_unity">
+					<h1 class="community">玩家社区</h1>
+					<ul class="comm_table">
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/消息.svg">
+								</div>
+								讨论交流
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/微信.svg">
+								</div>
+								关注微信
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/灯泡.svg">
+								</div>
+								点亮图标
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/电台.svg">
+								</div>
+								DNF电台
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/滚筒刷.svg">
+								</div>
+								原画馆
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="top_pic">
+									<img src="../pictures/svg/VIP 灰色.svg">
+								</div>
+								心悦专区
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_title">
+					<ul class="menu_title_ul">
+						<li class="newplayer_li">
+							<a href="#" class="newplayer_guide">新手指南</a>
+							<s class="menu_line_right"></s>
+							<div class="menu_one">
+								<ul>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/鼠标.svg">
+											</div>
+											游戏登陆
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/显示器.svg">
+											</div>
+											游戏界面
+
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/扳手.svg">
+											</div>系统设置
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/救生圈.svg">
+											</div>职业技能
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/等级.svg">
+											</div>等级经验
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/战斗.svg">
+											</div>战斗系统
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/任务.svg">
+											</div>任务系统
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/楼.svg">
+											</div>地下城
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/社区.svg">
+											</div>社区系统
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/宠物.svg">
+											</div>宠物
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/交易.svg">
+											</div>
+											生产交易
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/职业.svg">
+											</div>副职业
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/装备.svg">
+											</div>装备
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/商城.svg">
+											</div>商城
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/比剑.svg">
+											</div>特色玩法
+										</a></li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/图钉.svg">
+											</div>决斗场
+										</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="news_li">
+							<a href="#" class="infor_data">资料百科</a>
+							<s class="menu_line_right"></s>
+							<div class="menu_two">
+								<ul>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/资料.svg">
+											</div>
+											官方资料站
+										</a>
+									</li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/index_clients_17173.svg">
+											</div>17173资料站
+										</a>
+									</li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/历史.svg">
+											</div>历史版本
+										</a>
+									</li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/漫画.svg">
+											</div>漫画
+										</a>
+									</li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/小说.svg">
+											</div>小说
+										</a>
+									</li>
+									<li><a href="#">
+											<div class="top_pic">
+												<img src="../pictures/svg/音乐.svg">
+											</div>音乐
+										</a>
+									</li>
+								</ul>
+								<div class="knowledge">
+									<h3>剧情百科</h3>
+									<p><a href="#">故事大纲</a>&nbsp;&nbsp;<a href="#">插曲故事</a>&nbsp;&nbsp;
+										<a href="#">版本故事</a>&nbsp;&nbsp;<a href="#">故事薄</a>&nbsp;&nbsp;
+									</p>
+									<h3>人物百科</h3>
+									<p><a href="#">职业设定</a>&nbsp;&nbsp;<a href="#">种族设定</a>&nbsp;&nbsp;
+										<a href="#">城镇人物</a>&nbsp;&nbsp;<a href="#">剧情人物</a>&nbsp;&nbsp;
+									</p>
+									<h3>背景知识</h3>
+									<p><a href="#">地理划分</a>&nbsp;&nbsp;<a href="#">势力介绍</a>&nbsp;&nbsp;
+										<a href="#">组织介绍</a>&nbsp;&nbsp;<a href="#">区域介绍</a>&nbsp;&nbsp;
+									</p>
+									<h3>游戏设定</h3>
+									<p><a href="#">编年史</a>&nbsp;&nbsp;<a href="#">重要事件</a>&nbsp;&nbsp;
+										<a href="#">游戏术语</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<a href="#" class="know_more">更多+</a>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="video">
+
+							<a href="#" class="strategy_video">攻略视频</a>
+							<s class="menu_line_right"></s>
+							<div class="menu_three">
+								<div class="three_hide_left">
+									<h1>职业攻略</h1>
+									<p class="three_tophalf">
+										<a href="#">鬼剑士</a>
+										<a href="#">鬼剑士女</a>
+										<a href="#">神枪手</a>
+										<a href="#">神枪手女</a>
+										<a href="#">魔法师男</a>
+										<a href="#">魔法师</a>
+										<a href="#">圣职者</a>
+										<a href="#">圣职者女</a>
+									</p><br />
+									<p class="three_bottomhalf">
+										<a href="#">格斗家</a>
+										<a href="#">格斗家男</a>
+										<a href="#">魔枪士</a>
+										<a href="#">枪剑士</a>
+										<a href="#">守护者</a>
+									</p><br />
+									<h1>地下城攻略</h1>
+
+									<a href="#">鬼剑士</a>
+									<a href="#">鬼剑士女</a>
+									<a href="#">神枪手</a>
+									<a href="#">神枪手女</a>
+									<a href="#">魔法师男</a>
+									<a href="#">魔法师</a>
+									<a href="#">圣职者</a>
+									<a href="#">圣职者女</a>
+									<br />
+									<br />
+									<a href="#">格斗家</a>
+									<a href="#">格斗家男</a>
+									<a href="#">魔枪士</a>
+									<a href="#">枪剑士</a>
+									<a href="#">守护者</a>
+
+								</div>
+								<div class="three_hide_right">
+									<div class="three_video">
+										<a href="#">职业视频</a><br /><br />
+										<a href="#">赛事视频</a><br /><br />
+										<a href="#">官方视频</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="server_li">
+
+							<a href="#" class="own_server">自助服务</a>
+							<s class="menu_line_right"></s>
+							<div class="menu_four">
+								<div class="menu_four_left">
+									<ul>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/充值.svg">
+												</div>充值
+											</a></li>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/wegame.svg">
+												</div>TGP助手
+											</a></li>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/瞄准.svg">
+												</div>加点模拟器
+											</a></li>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/电脑.svg">
+												</div>体验服
+											</a></li>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/放大镜.svg">
+												</div>宝珠查询器
+											</a></li>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/头像.svg">
+												</div>头像装扮
+											</a></li>
+										<li class="menu_four_li"><a href="#">
+												<div class="top_pic">
+													<img src="../pictures/svg/自助.svg">
+												</div>自助工具
+											</a></li>
+
+									</ul>
+								</div>
+								<div class="menu_four_right">
+									<div class="content_r">
+										<h3 class="f_title">安全中心</h3>
+										<p class="f_text">
+											<a href="#">女王的制裁</a>
+											<a href="#">封号查询</a>
+											<a href="#">封号申诉</a>
+											<a href="#">视频举报</a>
+											<a href="#">安全公约</a>
+										</p>
+										<p class="f_text">
+											<a href="#">信用星级</a>
+											<a href="#">二级密码消除</a>
+											<a href="#">密保特权</a>
+											<a href="#">安全模式</a>
+										</p>
+										<h3 class="f_title">自助服务</h3>
+										<p class="f_text">
+											<a href="#">充值</a>
+											<a href="#">消费记录</a>
+											<a href="#">角色恢复</a>
+											<a href="#">点亮图标</a>
+											<a href="#">兑换CDKEY</a>
+											<a href="#">预约组队</a>
+										</p>
+										<h3 class="f_title">客服中心</h3>
+										<p class="f_text">
+											<a href="#">QQ在线客服</a>
+											<a href="#">在线问答</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="toys">
+					<div class="toys_title">
+						道聚城推荐
+					</div>
+					<ul class="toys_ul">
+						<li class="toys_li">
+							<div class="photo_toys">
+								<a href="#" class="hammer">
+									<img src="../pictures/10007477.jpg" />
+								</a>
+							</div>
+							<div class="toys_right">
+								幸运魔锤100个<br />
+								23200点券<br />
+								<a href="#" class="buynow">立即购买</a>
+							</div>
+
+						</li>
+						<li class="toys_li">
+							<div class="photo_toys">
+								<a href="#" class="hammer">
+									<img src="../pictures/10007477.jpg" />
+								</a>
+							</div>
+							<div class="toys_right">
+								黄金蜜蜡<br />
+								12000点券<br />
+								<a href="#" class="buynow">立即购买</a>
+							</div>
+						</li>
+						<li class="toys_li">
+							<div class="photo_toys">
+								<a href="#" class="hammer">
+									<img src="../pictures/10007477.jpg" />
+								</a>
+							</div>
+							<div class="toys_right">
+								传说跨界石<br />
+								8800点券<br />
+								<a href="#" class="buynow">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="partner">
+					<div class="select_menu">
+						<h3 class="select_h">合作媒体网站</h3>
+						<ul class="select_hide">
+							<li><a href="#">电脑管家游戏福利</a></li>
+							<li><a href="#">腾讯文学</a></li>
+							<li><a href="#">腾讯DNF资料站</a></li>
+							<li><a href="#">17173游戏专区</a></li>
+							<li><a href="#">多玩专区</a></li>
+							<li><a href="#">766游戏专区</a></li>
+							<li><a href="#">游久网游戏专区</a></li>
+							<li><a href="#">太平洋游戏网专区</a></li>
+							<li><a href="#">电玩巴士游戏专区</a></li>
+							<li><a href="#">地下城与勇士52pk</a></li>
+							<li><a href="#">腾讯视频游戏专区</a></li>
+							<li><a href="#">爱玩网专区</a></li>
+							<li><a href="#">爱拍游戏专区</a></li>
+						</ul>
+					</div>
+
+
+					<h3 class="partners">合作伙伴</h3>
+					<div class="part_name">
+						<a href="#">
+							<p>薇笑金融</p>
+							<p id="part_name_smile">Smile Financial</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 右边部分总体盒子 -->
+			<div class="right_all">
+				<!-- 活动中心 -->
+				<div class="activty_center">
+					<div class="activty_center_ul_title">
+						<h3 class="">活动中心</h3>
+						<div class="activity_title_right">
+							ACTIVITY<br />
+							CENTER
+						</div>
+						<div class="activity_more">
+							<a href="#">
+								更多活动+
+							</a>
+						</div>
+					</div>
+					<div class="activty_center_ul">
+						<ul id="activty_tab">
+							<li class="activty_center_li">热门推荐</li>
+							<li>新手升级</li>
+							<li>高手提升</li>
+							<li>商城特惠</li>
+							<li>合作活动</li>
+						</ul>
+						<div id="activty_center_tab">
+							<div class="activity_hide_one">
+								<a href="#"><img src="../pictures/dnf/1553076237_-702231030_31750_sBigImgFile.jpg"
+										alt="notfound"></a>
+								<a href="#" class="hide_lastthree"><img
+										src="../pictures/dnf/1553076597_-702231030_18218_sBigImgFile.jpg"
+										alt="notfound"></a>
+								<a href="#" class="hide_lastthree"><img
+										src="../pictures/dnf/1553093048_-702231030_29166_sBigImgFile.jpg"
+										alt="notfound"></a>
+								<a href="#" class="hide_lastthree"><img
+										src="../pictures/dnf/1551927164_-702231030_10810_sBigImgFile.jpg"
+										alt="notfound"></a>
+							</div>
+							<div class="activity_hide">
+								<a href="#"><img src="../pictures/dnf/1549002692_-702231030_27629_sBigImgFile.jpg"
+										alt="notfound"></a>
+								<a href="#" class="hide_lastthree"><img
+										src="../pictures/dnf/1543807183_-702231030_19134_sBigImgFile.jpg"
+										alt="notfound"></a>
+								<a href="#" class="hide_lastthree"><img
+										src="../pictures/dnf/1546583205_-702231030_498_sBigImgFile.jpg"
+										alt="notfound"></a>
+								<a href="#" class="hide_lastthree"><img
+										src="../pictures/dnf/1551927164_-702231030_10810_sBigImgFile.jpg"
+										alt="notfound"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- 视频专区 -->
+				<div class="video_center">
+					<div class="activty_center">
+						<div class="activty_center_ul_title">
+							<h3 class="">视频中心</h3>
+							<div class="activity_title_right">
+								VIDEO<br />
+								CENTER
+							</div>
+						</div>
+						<div class="video_left">
+							<ul class="video_left_ul">
+								<li>热门</li>
+								<li>栏目</li>
+								<li>功略</li>
+								<li>赛事</li>
+								<li>官方</li>
+								<!-- <li><a href="#">更多+</a></li> -->
+							</ul>
+							<div class="video_pic">
+								<div class="video_pic_left">
+									<a href="#">
+										<div>
+											<img src="../pictures/dnf/视频图01.jpg">
+										</div>
+									</a>
+								</div>
+								<div class="video_pic_right">
+									<a href="#">
+										<div><img src="../pictures/dnf/视频图02.jpg"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="video_right">
+							<div>
+								<ul class="host">
+									<li>明星主播</li>
+								</ul>
+							</div>
+							<div class="video_host">
+								<div class="video_host_left">
+									<a href="#">
+										<img src="../pictures/dnf/视频图03.jpg">
+									</a>
+								</div>
+								<div class="video_host_right">
+									<a href="#">
+										<img src="../pictures/dnf/视频图04.jpg">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 品牌中心 -->
+				<div class="brand_center">
+
+					<div class="brand_center_title">
+						<h3>品牌专区</h3>
+						<div class="brand_center_title_Eng">
+							BRAND<br />
+							AREA
+						</div>
+					</div>
+					<div class="brand_pic">
+						<div class="brand_pic_left">
+							<div class="brand_picture">
+								<img src="../pictures/dnf/品牌中心图01.jpg">
+							</div>
+							<div class="novel">
+								<h3>小说</h3>
+								<p><a href="#">更多+</a></p>
+							</div>
+							<div class="novel_title">
+								<ul class="novel_title_ul">
+									<li class="novel_one">
+										最后一个使徒
+									</li>
+
+									<li class="novel_two">
+										万剑之王
+									</li>
+									<li class="novel_three">
+										阿拉德之剑
+									</li>
+								</ul>
+								<div class="novel_one_text">
+									<div class="novel_pic">
+										<img src="../pictures/dnf/小说配图01.jpg">
+									</div>
+									<div class="novel_chapter">
+										<ul>
+											<li>
+												<a href="#">第三十九章 邂逅</a>
+											</li>
+											<li>
+												<a href="#">第三十八章 中计</a>
+											</li>
+											<li>
+												<a href="#">第三十七章 追与击</a>
+											</li>
+											<li>
+												<a href="#">第三十六章 毒液发威</a>
+											</li>
+											<li>
+												<a href="#">第三十五章 守卫者</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="brand_pic_right">
+							<div class="brand_picture">
+								<img src="../pictures/dnf/品牌中心图02.jpg">
+							</div>
+							<div class="anime_title">
+								<h3>动漫</h3>
+								<p><a href="#">更多+</a></p>
+							</div>
+							<div class="anime_pic">
+								<a href="#">
+									<img src="../pictures/dnf/官方动画.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 媒体资讯 -->
+				<div class="media_information">
+					<div class="media_title">
+						<h3 class="">媒体资讯</h3>
+						<div class="media_title_Eng">
+							MEDIA<br />
+							INFORMATION
+						</div>
+						<div class="media_more">
+							<a href="#">
+								更多活动+
+							</a>
+						</div>
+					</div>
+					<div class="media_news">
+						<ul>
+							<li>
+								<a href="#">五一套内容前瞻 除了RE零联动还有这些亮点</a>
+							</li>
+							<li>
+								<a href="#">体验服积分商城更新！这些材料不换就是“血亏”？</a>
+							</li>
+							<li>
+								<a href="#">DNF巅峰竞速赛如火如荼 国服主播各显神通</a>
+							</li>
+							<li>
+								<a href="#">DNF国服开启竞速单人组队鸟背热潮 鬼泣战果喜人</a>
+							</li>
+							<li>
+								<a href="#">DNF全职业技能分析忍者篇 有树叶飞舞的地方火就会燃烧</a>
+							</li>
+							<li>
+								<a href="#">DNF 粉卡交易改版 囤附魔卡即将成为历史 </a>
+							</li>
+						</ul>
+					</div>
+					<div class="media_pic">
+						<img src="../pictures/dnf/资讯图01.jpg">
+						<img src="../pictures/dnf/资讯图02.jpg">
+						<img src="../pictures/dnf/资讯图03.jpg">
+						<img src="../pictures/dnf/资讯图04.jpg">
+					</div>
+				</div>
+				<!-- 职业攻略 -->
+				<div class="professional">
+					<div class="professional_title">
+						<h3 class="">职业攻略</h3>
+						<div class="professional_Eng">
+							ROLE<br />
+							STRATEGY
+						</div>
+						<div class="professional_more">
+							<a href="#">
+								更多活动+
+							</a>&nbsp;
+							<a href="#">
+								17173资料站+
+							</a>&nbsp;
+							<a href="#">
+								COLG社区+
+							</a>
+						</div>
+					</div>
+					<div class="professional_table">
+						<div class="pro_table1">
+							<ul>
+								<li>鬼剑士</li>
+							</ul>
+						</div>
+						<div class="pro_table2">
+							<div class="pro_table2_top">
+								<ul>
+									<li><a href="#">再破鸟背竞速国服巅峰记录？鬼泣为什么这么强！</a></li>
+									<li><a href="#">DNF男鬼剑全职业传说换装与异界提升率对比</a></li>
+									<li><a href="#">DNF云玩家福利来了 辅助鬼泣的正确打开方式</a></li>
+									<li><a href="#">来跟风玩幻神鸭 DNF全职业技能分析鬼泣篇</a></li>
+									<li><a href="#">无忧姐问答第四期：剑鬼的防具如何选择</a></li>
+									<li><a href="#">不做皮皮瞎，DNF阿修罗技能小技巧了解一下</a></li>
+								</ul>
+							</div>
+							<div class="pro_table2_bottom">
+								<ul>
+									<li><a href="#">
+											<div class="pro_top_pic">
+												<img src="../pictures/svg/小说.svg">
+											</div>
+											背景故事
+										</a></li>
+									<li><a href="#">
+											<div class="pro_top_pic">
+												<img src="../pictures/svg/视频.svg">
+											</div>职业视频
+										</a></li>
+									<li><a href="#">
+											<div class="pro_top_pic">
+												<img src="../pictures/svg/攻略.svg">
+											</div>职业攻略
+										</a></li>
+									<li><a href="#">
+											<div class="pro_top_pic">
+												<img src="../pictures/svg/救生圈.svg">
+											</div>加点模拟
+										</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="pro_table3">
+							<ul>
+								<li><a href="#">格斗家女</a></li>
+								<li><a href="#">神枪手</a></li>
+								<li><a href="#">魔法师女</a></li>
+								<li><a href="#">男魔法师</a></li>
+								<li><a href="#">圣职者</a></li>
+								<li><a href="#">圣职者女</a></li>
+								<li><a href="#">女枪手</a></li>
+								<li><a href="#">暗夜使者</a></li>
+								<li><a href="#">格斗家男</a></li>
+								<li><a href="#">黑暗武士</a></li>
+								<li><a href="#">缔造者</a></li>
+								<li><a href="#">女鬼剑士</a></li>
+								<li><a href="#">守护者</a></li>
+								<li><a href="#">魔枪士</a></li>
+								<li><a href="#">枪剑士</a></li>
+								<li><a href="#">神枪手</a></li>
+								<li><a href="#">魔法师女</a></li>
+								<li><a href="#">男魔法师</a></li>
+								<li><a href="#">圣职者</a></li>
+								<li><a href="#">女枪手</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 赛事专区 -->
+				<div class="race_area">
+					<div class="race_title">
+						<h3 class="">赛事专区</h3>
+						<div class="race_Eng">
+							RACE<br />
+							AREA
+						</div>
+						<div class="race_more">
+							<a href="#">
+								全年赛事+
+							</a>
+						</div>
+					</div>
+					<div class="race_content">
+						<div class="rc_left">
+							<div class="rc_title">
+								<ul>
+									<li><a href="#">F1天王赛</a></li>
+									<li><a href="#">DPL</a></li>
+									<li><a href="#">格斗大赛</a></li>
+									<li><a href="#">职业联赛</a></li>
+								</ul>
+							</div>
+							<div class="F1">
+								<div class="rc_pic">
+									<img src="../pictures/dnf/event3.png">
+									<p><a href="#">进入专题></a></p>
+								</div>
+								<div class="rc_left_ul">
+									<ul>
+										<li><a href="#">[F1天王赛] 2018DNF F1天王赛巅峰对决 金太焕荣登冠军宝座</a></li>
+										<li><a href="#">[F1天王赛] 对话鞠春良：DNF就是我的青春</a></li>
+										<li><a href="#">[F1天王赛] 探秘F1年度盛典：你不可不看的新世界</a></li>
+										<li><a href="#">[F1天王赛] 年度盛典倒计时1天 邓紫棋歌声助阵 </a></li>
+										<li><a href="#">[F1天王赛] 预见你的热爱：F1年度盛典精彩回顾</a></li>
+										<li><a href="#">[F1天王赛] 捍卫中国主场 鞠春良获F1个人总冠军</a></li>
+										<li><a href="#">[F1天王赛] F1嘉年华年度盛典开场CG</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="live_trailer">
+								<div class="live_title">
+									<h3>直播预告</h3>
+								</div>
+								<table>
+									<tr>
+										<td>11月4日</td>
+										<td>19：00</td>
+										<td>第一届DPL</td>
+										<td>A组第三轮</td>
+										<td>熊猫梦想战队VS别PK了来刷图</td>
+										<td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+													class="watch">观看</span></a></td>
+									</tr>
+									<tr>
+										<td>11月4日</td>
+										<td>19：00</td>
+										<td>第一届DPL</td>
+										<td>A组第三轮</td>
+										<td>TCHVS沃克天团</td>
+										<td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+													class="watch">观看</span></a></td>
+									</tr>
+									<tr>
+										<td>11月3日</td>
+										<td>19：00</td>
+										<td>第一届DPL</td>
+										<td>A组第二轮</td>
+										<td>别PK了来刷图VSVAN</td>
+										<td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+													class="watch">观看</span></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="rc_right">
+							<img src="../pictures/dnf/赛事01.jpg">
+							<img src="../pictures/dnf/赛事02.jpg">
+							<img src="../pictures/dnf/赛事03.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="foot_text">
+			<div class="foot_left">
+				<div class="tencent">
+					<div class="eng">
+						<a href="#">Tencent<span class="line">|</span> 腾讯互动娱乐</a>
+					</div>
+				</div>
+			</div>
+			<div class="foot_right">
+				<ul class="foot_right_all">
+					<li class="li1">
+						<a href="#">腾讯互动娱乐</a>
+						<span class="line">|</span>
+						<a href="#">服务条款</a>
+						<span class="line">|</span>
+						<a href="#">腾讯游戏隐私保护指引</a>
+						<span class="line">|</span>
+						<a href="#">腾讯游戏招聘</a>
+						<span class="line">|</span>
+						<a href="#">腾讯游戏客服</a>
+						<span class="line">|</span>
+						<a href="#">游戏地图</a>
+						<span class="line">|</span>
+						<a href="#">商务合作</a>
+						<span class="line">|</span>
+						<a href="#">腾讯网</a>
+						<span class="line">|</span>
+						<a href="#">网站导航</a>
+						<span class="line">|</span>
+					</li>
+					<li class="li2">
+						<a href="#">腾讯公司版权所有</a>
+					</li>
+					<li class="li3">
+						COPYRIGHT 1998-2019 TENCENT.ALL RIGHTS RESERVED.
+					</li>
+					<li class="li4">
+						COPYRIGHT NEOPLE.INC,ALL RIGHTS RESERVED.
+					</li>
+					<li class="li5">
+						抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当
+						适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+					</li>
+					<li class="li6">
+						本游戏适合13+的用户使用；为了您的健康，请合理安排游戏时间。
+					</li>
+					<li class="li7">
+						<a href="#">粤网文[2017]6138-1456号</a>
+						<span class="line">|</span>
+						<a href="#">（总）网出证（粤）字第057号</a>
+
+					</li>
+					<li class="li8">
+						The creator：李敬尧
+						<span class="line">|</span>
+						<a href="#">QQ：1227437715</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
